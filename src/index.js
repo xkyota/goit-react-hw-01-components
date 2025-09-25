@@ -1,16 +1,20 @@
-import './index.css';
+import '../src/css/index.css';
 
 import React from 'react';
 
 import ReactDOM from 'react-dom/client';
 
-import App from './App';
+import FriendList from './FriendList.jsx';
+import Profile from './Profile';
 import reportWebVitals from './reportWebVitals';
+import Statistics from './Statistics.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Profile />
+    <Statistics /> 
+    <FriendList/>
   </React.StrictMode>
 );
 
